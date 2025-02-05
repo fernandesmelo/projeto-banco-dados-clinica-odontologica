@@ -53,8 +53,6 @@ procedimentos.
 
 **Criação de Restrições de Integridade:** Foram aplicadas regras como não permitir valores nulos em campos críticos , garantir unicidade em registros como CPF e CNPJ, além de definir ações para CASCADE, NO ACTION e SET NULL em relações de dependência.
 
-**Otimização para Consultas e Relatórios:** Foram criadas visualizações e scripts para facilitar consultas, relatórios gerenciais e análise de dados.
-
 **Scripts para Gerenciamento de Dados:** Foram desenvolvidos scripts DDL (criação e alteração da estrutura) e DML (inserção, atualização e remoção de dados) para automação do banco.
 
 ## ✒️ Autores
