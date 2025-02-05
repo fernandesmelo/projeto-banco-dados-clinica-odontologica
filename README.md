@@ -43,9 +43,19 @@ procedimentos.
 * MySQL 3.11.3
 
 ## ✅ Tomadas de Decisões
-* Usamos o **Bootstrap** porque facilita a criação de sites responsivos e com design profissional. Ele economiza tempo de desenvolvimento, garante compatibilidade com diferentes navegadores e permite personalização para atender às necessidades específicas do projeto.
-* **Express** foi usado porque é uma biblioteca leve e flexível para criar APIs no back-end, fornecendo uma estrutura organizada para gerenciar rotas, middlewares e requisições de forma rápida e eficiente.
-* E o **TypeORM** foi usado no back-end para facilitar o trabalho com bancos de dados, pois permite mapear tabelas e relacionamentos diretamente no código usando classes e objetos (ORM), reduzindo a complexidade de escrever consultas SQL manualmente.
+**Modelagem do Negócio:** Foi definido que o sistema deveria gerenciar pacientes, equipe clínica, fornecedores, agendamentos, procedimentos e pagamentos , garantindo um fluxo eficiente de informações.
+
+**Modelo Conceitual (MER):** Foram criadas entidades como Paciente, Equipe Clínica, Fornecedor, Agendamento, Procedimento, Pagamento, Seguro, Registro Clínico, Compras, Laboratório Externo e suas relações.
+
+**Modelo Relacional (MR):** As entidades foram convertidas em tabelas no MySQL Workbench , garantindo a normalização dos dados e a integridade referencial.
+
+**Definição de Chaves Primárias e Estrangeiras:** Cada tabela recebeu um identificador único (PK) e foram estabelecidas relações através de chaves estrangeiras (FK) para garantir a integridade dos dados.
+
+**Criação de Restrições de Integridade:** Foram aplicadas regras como não permitir valores nulos em campos críticos , garantir unicidade em registros como CPF e CNPJ, além de definir ações para CASCADE, NO ACTION e SET NULL em relações de dependência.
+
+**Otimização para Consultas e Relatórios:** Foram criadas visualizações e scripts para facilitar consultas, relatórios gerenciais e análise de dados.
+
+**Scripts para Gerenciamento de Dados:** Foram desenvolvidos scripts DDL (criação e alteração da estrutura) e DML (inserção, atualização e remoção de dados) para automação do banco.
 
 ## ✒️ Autores
 
